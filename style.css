@@ -1,0 +1,440 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --lightGreen: #e4f5eb;
+  --DeepGreen: #45b871;
+  --white: #ffffff;
+  --coloredhWhite: #e5e5e5;
+  --Blue: #4c68ff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--lightGreen);
+  height: 90vh;
+}
+.header .navbar-brand span {
+  color: var(--DeepGreen);
+  font-size: 24px;
+  font-weight: 700;
+}
+.header .navbar-nav li,
+.header form .sign-in {
+  font-size: 16px;
+  font-weight: 600;
+}
+.header .navbar-nav li + li {
+  margin-left: 25px;
+}
+.header form .free-trial,
+.header .showcase .child2 button {
+  background-color: var(--DeepGreen);
+  color: var(--white);
+  border-radius: 0;
+}
+
+/* showcase */
+.child1 {
+  width: 90%;
+}
+.header .showcase .child1 h2 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 83px;
+}
+.header .showcase .child1 p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.header .showcase .child2,
+.play-video {
+  justify-items: space-between;
+  align-items: center;
+}
+.round {
+  background: var(--white);
+  color: var(--Blue);
+  font-size: 40px;
+  border: 1px solid var(--Blue);
+  border-radius: 40px;
+}
+.showcase .parent {
+  position: relative;
+  margin-left: 100px;
+}
+.outer-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.iner-ring {
+  position: absolute;
+  top: 26px;
+  left: 25px;
+}
+.girl-img {
+  position: absolute;
+  top: 26px;
+  left: 40px;
+}
+.showcase .pop1 {
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  width: 250px;
+  z-index: 1;
+}
+.showcase .pop1 .teacher {
+  width: 85%;
+}
+.reviews {
+  margin-top: -20px;
+}
+.showcase .pop1 .fa-thumbs-up,
+.showcase .pop2 .fa-calendar,
+.showcase .pop3 .fa-thumbs-up {
+  color: var(--white);
+  background-color: var(--Blue);
+  border-radius: 50%;
+}
+.showcase .pop1 .fa-star,
+.showcase .pop2 .fa-clock {
+  color: var(--DeepGreen);
+}
+.showcase .pop2 {
+  display: flex;
+  justify-content: space-around;
+  width: 320px;
+  position: absolute;
+  top: 320px;
+  left: -20px;
+  z-index: 1;
+}
+.showcase .pop2 .weekly .time {
+  margin-top: -20px;
+}
+.showcase .pop3 {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 450px;
+}
+.showcase .pop3 .fa-thumbs-up {
+  position: absolute;
+  top: -30px;
+  left: 70px;
+}
+.showcase .pop3 .students {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--white);
+  padding-top: 20px;
+}
+.showcase .pop3 img + img {
+  margin-left: -25px;
+}
+.brand {
+  background-color: var(--white);
+}
+.brand h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.get-started {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.get-started .parent {
+  position: relative;
+}
+.get-started .parent img {
+  width: 65%;
+  position: absolute;
+}
+.get-started .pop {
+  position: absolute;
+  width: 30%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 1px 0px;
+}
+.get-started .parent .pop-step1 {
+  top: 60px;
+  left: 70px;
+}
+.get-started .parent .pop-step2 {
+  top: 80px;
+  left: 290px;
+}
+.get-started .parent .pop-step3 {
+  top: 260px;
+  left: 70px;
+}
+.get-started .parent .pop-step4 {
+  background-color: var(--DeepGreen);
+  top: 280px;
+  left: 290px;
+}
+.get-started .parent .pop-step4 h3 {
+  background-color: var(--white);
+}
+.get-started .pop h3 {
+  width: 50%;
+  background-color: var(--DeepGreen);
+  border-radius: 50%;
+}
+
+.get-started h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.get-started p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 25px;
+}
+.get-started .round {
+  background-color: #ddeef2;
+}
+.courses {
+  background-color: var(--lightGreen);
+}
+.courses h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 74px;
+}
+.courses .card1 {
+  margin-left: auto;
+}
+.courses .card2 {
+  margin: auto;
+}
+.courses .card-body h5 {
+  font-weight: 600;
+  line-height: 30px;
+}
+.courses .card-body .card-text {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px;
+}
+.courses .card-body a {
+  gap: 0.5rem !important;
+}
+.courses .material-symbols-outlined {
+  font-size: 15px;
+  background-color: red;
+  color: var(--white);
+  border: none;
+}
+.courses .card-body .play-video i {
+  color: var(--Blue);
+}
+.courses .card-body .card-profile,
+.courses .card-body .profile {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.courses .card-body .profile p {
+  margin-top: 10px;
+  line-height: 20px;
+}
+.courses .card-body .profile p a {
+  color: var(--DeepGreen);
+}
+.courses .card-body .card-profile .price {
+  color: var(--Blue);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.student-reviews h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 74px;
+}
+.student-reviews p,
+.student-reviews small {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 30px;
+}
+.student-reviews .card {
+  border: none;
+  box-shadow: #c6c4c4 0px 0px 0px 1px;
+}
+.student-reviews .card img {
+  border: #45b871 solid 2px;
+}
+.student-reviews .card1 {
+  background: #fff;
+  box-shadow: #c6c4c4 0px 4px 4px 4px;
+}
+
+.footer .body {
+  background-color: var(--DeepGreen);
+}
+.footer h1 {
+  width: 50%;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 68px;
+}
+.footer .btn1 {
+  border: 1px #fff solid;
+  border-radius: 0px;
+  color: #fff;
+}
+.footer .btn2 {
+  border-radius: 0px;
+  background: #fff;
+}
+
+@media screen and (min-width: 400px) {
+  .get-started-text {
+    padding: 40px;
+  }
+  .brand {
+    padding: 40px 0px;
+  }
+  .get-started h2 {
+    width: 60%;
+  }
+  .courses {
+    padding: 50px;
+  }
+  .courses .card {
+    width: 20rem;
+  }
+  .student-reviews .card1 {
+    width: 35rem;
+  }
+  .student-reviews .card2 {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 1200px;
+  }
+  .header .showcase h2 {
+    text-align: center;
+    font-size: 35px !important;
+    line-height: 60px !important;
+  }
+  .header .showcase .img-float {
+    margin-top: 50px;
+  }
+  .showcase .parent {
+    margin-left: -5px;
+  }
+  .outer-ring {
+    top: 0;
+    left: 5px;
+  }
+  .showcase .pop1 {
+    width: 215px;
+    top: -25px;
+    left: -5px;
+  }
+  .showcase .pop2 {
+    display: none;
+  }
+  .showcase .pop3 {
+    width: 200px;
+    top: 310px;
+    left: 165px;
+  }
+  .brand .row2 {
+    display: flex;
+  }
+  .brand .row2 div {
+    width: 50%;
+  }
+  .get-started {
+    padding: 10px;
+    height: 130vh;
+  }
+  .get-started .row {
+    flex-direction: column-reverse;
+  }
+  .get-started .parent {
+    margin-top: 40px;
+  }
+  .get-started .parent img {
+    width: 80%;
+  }
+  .get-started .parent .pop {
+    width: 35%;
+    padding: 10px;
+  }
+  .get-started .parent .pop-step1 {
+    top: 30px;
+    left: 40px;
+  }
+  .get-started .parent .pop-step2 {
+    top: 40px;
+    left: 180px;
+  }
+  .get-started .parent .pop-step3 {
+    top: 190px;
+    left: 40px;
+  }
+  .get-started .parent .pop-step4 {
+    top: 200px;
+    left: 180px;
+  }
+  .get-started-text h2 {
+    font-size: 45px;
+  }
+  .courses .row {
+    gap: 3rem;
+  }
+  .courses h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .student-reviews .row {
+    gap: 5rem;
+  }
+
+  .footer h1 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  .footer .button {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer .btn {
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
