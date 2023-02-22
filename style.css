@@ -337,6 +337,44 @@ a {
   }
 }
 
+@media screen and (max-width: 770px) {
+  .header {
+    height: 125vh;
+  }
+  .showcase .pop1 {
+    top: 80px;
+    left: 55px;
+  }
+  .showcase .pop2 {
+    top: 380px;
+    left: -20px;
+  }
+  .showcase .pop3 {
+    top: 150px;
+    left: 500px;
+  }
+  .brand .row2 {
+    display: flex;
+  }
+  .brand .row2 div {
+    width: 50%;
+  }
+  .get-started {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .get-started-text {
+    margin-top: 500px;
+  }
+  .get-started .parent .pop-step2 {
+    top: 80px;
+    left: 310px;
+  }
+  .get-started .parent .pop-step4 {
+    top: 280px;
+    left: 310px;
+  }
+}
 @media screen and (max-width: 400px) {
   .header {
     height: 1200px;
@@ -422,7 +460,6 @@ a {
   .student-reviews .row {
     gap: 5rem;
   }
-
   .footer h1 {
     width: 100%;
     font-size: 20px;
